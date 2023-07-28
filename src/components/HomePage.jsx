@@ -203,7 +203,7 @@ const HomePage = () => {
 	}, []);
 
 	const connect = () => {
-		const sock = new SockJS("http://localhost:2525/websocket");
+		const sock = new SockJS("https://whatsapp-backend-production-4929.up.railway.app/websocket");
 		const temp = over(sock);
 
 		setStompClient(temp);
